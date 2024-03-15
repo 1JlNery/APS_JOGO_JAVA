@@ -49,7 +49,7 @@ public class GamePanel extends JPanel{
 	}
 
 	private void importimg() {
-		InputStream is = getClass().getResourceAsStream("/player_sprites.png");
+		InputStream is = getClass().getResourceAsStream("/sprite_jogador2.png");
 		
 		try {
 			img = ImageIO.read(is);
@@ -126,9 +126,5 @@ public class GamePanel extends JPanel{
 		updatePos();
 	g.drawImage(animations[playerAction][aniIndex], (int)xDelta, (int)yDelta, 256, 160, null);
 	}
-
-	
-
-	
 	
 }
